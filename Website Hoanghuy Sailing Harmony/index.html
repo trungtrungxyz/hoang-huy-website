@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoang Huy Sailing Harmony | Sống Hài Hòa Giữa Thiên Nhiên</title>
+    
+    <!-- LIÊN KẾT ĐẾN FILE CSS NGOÀI -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- SMART HEADER -->
+    <header id="mainHeader">
+        <div class="container nav-container">
+            <div class="logo-brand">
+                <span class="logo-main">HOANG HUY</span>
+                <span class="logo-sub">SAILING HARMONY</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Trang chủ</a>
+                <a href="tong-quan.html">Tổng quan</a>
+                <a href="vi-tri.html">Vị trí</a>
+                <a href="mat-bang.html">Mặt bằng</a>
+                <a href="chinh-sach.html">Chính sách</a>
+                <a href="tin-tuc.html">Tin tức</a>
+                <a href="lien-he.html">Liên hệ</a>
+            </nav>
+            <div class="header-actions">
+                <button class="btn-login" onclick="openModal('login')">👤 Đăng nhập</button>
+                <a href="tel:0944480991" class="header-hotline">📞 0944 480 991</a>
+            </div>
+        </div>
+    </header>
+
+<!-- HERO SLIDER - PHONG CÁCH VINHOMES OCEAN PARK -->
+<section class="hero" id="hero">
+    <div class="slider-container">
+        <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80');"></div>
+    </div>
+    
+    <div class="hero-content">
+        <div class="hero-text">
+            <div class="hero-badge">MỞ BÁN HOANG HUY SAILING HARMONY</div>
+            <h1 class="hero-title">GIÁ GỐC TRỰC TIẾP CĐT</h1>
+            <a href="#tong-quan" class="hero-btn-detail">Xem chi tiết</a>
+        </div>
+    </div>
+    
+    <!-- Floating Contact Buttons (Góc dưới trái) -->
+    <div class="floating-contact">
+        <a href="mailto:contact@hoanghuysailingharmony.com" class="contact-btn">
+            <span class="icon">✉️</span>
+            <span>Liên hệ</span>
+        </a>
+        <a href="https://zalo.me/0944480991" target="_blank" class="contact-btn phone">
+            <span class="icon">📞</span>
+            <span>0944 480 991</span>
+        </a>
+    </div>
+    
+    <!-- Slider Controls -->
+    <button class="slider-arrow arrow-prev" onclick="changeSlide(-1)">‹</button>
+    <button class="slider-arrow arrow-next" onclick="changeSlide(1)">›</button>
+    
+    <!-- Dots -->
+    <div class="slider-dots">
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+</section>
+
+    <!-- ABOUT SECTION - TỔNG QUAN DỰ ÁN -->
+<section class="about-section" id="tong-quan">
+    <div class="about-container">
+        <div class="about-grid">
+            <!-- Nội dung bên trái -->
+            <div class="about-content">
+                <h2 class="about-title">Hoang Huy Sailing Harmony</h2>
+                
+                <p class="about-text">
+                    <strong>Hoang Huy Sailing Harmony</strong> là dự án đại đô thị văn minh, hiện đại được quy hoạch theo mô hình sinh thái phong cách quốc tế. Với điểm nhấn là bến du thuyền và không gian sông nước độc đáo, dự án được ví như một thành phố biển thu nhỏ với hệ thống tiện ích lý tưởng và đẳng cấp.
+                </p>
+                
+                <p class="about-text">
+                    Dự án đã bắt đầu được triển khai và đến nay đã hình thành nên một khu đô thị đáng sống và tiện ích bậc nhất, với:
+                </p>
+                
+                <ul class="about-list">
+                    <li><strong>1000+ căn hộ cao cấp</strong> đã và đang được bàn giao thuộc các phân khu: The Harmony, The Sailing, The River View.</li>
+                    <li><strong>500+ căn biệt thự</strong> song lập, liền kề và shophouse đã được bàn giao.</li>
+                    <li><strong>05 tòa căn hộ đang thi công</strong> thuộc phân khu The Sky Garden và The Marina.</li>
+                    <li><strong>50ha</strong> tổng diện tích với mật độ xây dựng chỉ 35%, dành 65% cho cây xanh và tiện ích.</li>
+                </ul>
+            </div>
+            
+            <!-- Image Slider bên phải -->
+            <div class="about-image-wrapper">
+                <div class="about-image-slider">
+                    <div class="about-slide active" style="background-image: url('https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="about-slide" style="background-image: url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="about-slide" style="background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="about-slide" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80');"></div>
+                    
+                    <!-- Dots navigation -->
+                    <div class="about-slide-dots">
+                        <span class="about-dot active" onclick="goToAboutSlide(0)"></span>
+                        <span class="about-dot" onclick="goToAboutSlide(1)"></span>
+                        <span class="about-dot" onclick="goToAboutSlide(2)"></span>
+                        <span class="about-dot" onclick="goToAboutSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LOCATION SECTION - VỊ TRÍ DỰ ÁN -->
+<section class="location-section" id="vi-tri">
+    <div class="location-container">
+        <!-- Header -->
+        <div class="location-header">
+            <span class="location-badge">Vị trí vàng</span>
+            <h2 class="location-title">Vị Trí <span>Độc Tôn</span></h2>
+            <p class="location-subtitle">Tọa lạc tại trung tâm sầm uất nhất Hải Phòng, kết nối hoàn hảo với mọi tiện ích</p>
+        </div>
+
+        <!-- Main Grid -->
+        <div class="location-grid">
+            <!-- Image bên trái -->
+            <div class="location-image-wrapper">
+                <div class="location-image" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80');"></div>
+                <div class="location-image-overlay">
+                    <div class="location-address">150 TÔ HIỆU</div>
+                    <div class="location-address-sub">Quận Lê Chân, Thành phố Hải Phòng</div>
+                </div>
+            </div>
+
+            <!-- Content bên phải -->
+            <div class="location-content">
+                <h3>Trung Tâm Của Trung Tâm Hải Phòng</h3>
+                <p>
+                    Dự án <strong>Hoang Huy Sailing Harmony</strong> tọa lạc tại vị trí độc tôn trên <strong>đường Tô Hiệu</strong> - một trong những tuyến đường huyết mạch và sầm uất nhất của quận Lê Chân, thành phố Hải Phòng.
+                </p>
+                <p>
+                    Với chiều cao <strong>148m (40 tầng nổi)</strong>, dự án tự hào là một trong <strong>Top 3 tòa nhà cao nhất Hải Phòng</strong>, khẳng định vị thế biểu tượng mới của thành phố Cảng.
+                </p>
+
+                <!-- Highlights -->
+                <div class="location-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon"></div>
+                        <div class="highlight-text">
+                            <h4>Giao thông thuận tiện</h4>
+                            <p>Kết nối trực tiếp các trục đường chính: Tô Hiệu, Nguyễn Văn Linh, Lạch Tray</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🏥</div>
+                        <div class="highlight-text">
+                            <h4>Tiện ích y tế</h4>
+                            <p>Gần Bệnh viện Đa khoa Quốc tế Hải Phòng, Bệnh viện Trẻ em</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🛍️</div>
+                        <div class="highlight-text">
+                            <h4>Trung tâm thương mại</h4>
+                            <p>Liền kề AEON Mall Lê Chân, Vincom Plaza</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">🎓</div>
+                        <div class="highlight-text">
+                            <h4>Giáo dục chất lượng</h4>
+                            <p>Gần trường ĐH Hàng Hải, ĐH Y Dược, các trường quốc tế</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top 3 Badge -->
+                <div class="top-building-badge">
+                    <span class="rank">3</span>
+                    <span>Top 3 Tòa nhà cao nhất Hải Phòng - 148m</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Connectivity Section -->
+        <div class="connectivity-section">
+            <h3 class="connectivity-title">Kết Nối Đa Chiều - Khoảng Cách Vàng</h3>
+            <div class="connectivity-grid">
+                <div class="connectivity-item">
+                    <div class="connectivity-distance">2 km</div>
+                    <div class="connectivity-place">Sông Cấm & Trung tâm Hành chính TP</div>
+                </div>
+                <div class="connectivity-item">
+                    <div class="connectivity-distance">3 km</div>
+                    <div class="connectivity-place">Vinhomes Imperia Hải Phòng</div>
+                </div>
+                <div class="connectivity-item">
+                    <div class="connectivity-distance">5 km</div>
+                    <div class="connectivity-place">Cảng Quốc tế Hải Phòng</div>
+                </div>
+                <div class="connectivity-item">
+                    <div class="connectivity-distance">8 km</div>
+                    <div class="connectivity-place">Sân bay Quốc tế Cát Bi</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- TIN TỨC -->
+    <section id="tin-tuc" style="background-color: var(--light-bg);">
+        <div class="container">
+            <h2 class="section-title">Tin Tức & Sự Kiện</h2>
+            <p class="section-subtitle">Cập nhật những thông tin mới nhất về dự án</p>
+            
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="news-content">
+                        <span class="news-date">20 Tháng 09, 2026</span>
+                        <h3 class="news-title">Chính sách chiết khấu cực sốc dành cho 50 khách hàng đầu tiên</h3>
+                        <p class="news-excerpt">Chủ đầu tư Hoàng Huy vừa công bố chính sách ưu đãi đặc biệt trong tháng này với mức chiết khấu lên đến 5%...</p>
+                        <a href="chi-tiet-tin.html" class="news-link">Đọc tiếp →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="news-content">
+                        <span class="news-date">15 Tháng 09, 2026</span>
+                        <h3 class="news-title">Tiến độ thi công dự án Hoang Huy Sailing Harmony tháng 9/2026</h3>
+                        <p class="news-excerpt">Cập nhật hình ảnh mới nhất từ công trường: Các tòa căn hộ đã hoàn thiện 80% mặt ngoài...</p>
+                        <a href="chi-tiet-tin.html" class="news-link">Đọc tiếp →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-img" style="background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="news-content">
+                        <span class="news-date">10 Tháng 09, 2026</span>
+                        <h3 class="news-title">Lễ ra mắt nhà mẫu và trải nghiệm tiện ích bến du thuyền</h3>
+                        <p class="news-excerpt">Sự kiện được mong chờ nhất năm đã chính thức diễn ra với sự tham gia của hàng trăm khách hàng...</p>
+                        <a href="chi-tiet-tin.html" class="news-link">Đọc tiếp →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="lien-he">
+        <div class="container">
+            <div class="logo-brand">
+                <span class="logo-main">HOANG HUY</span>
+                <span class="logo-sub">SAILING HARMONY</span>
+            </div>
+            <p><strong>PHÒNG KINH DOANH DỰ ÁN</strong></p>
+            <p>Hotline: <a href="tel:0944480991" style="color: var(--accent-light); font-weight: bold;">0944 480 991</a></p>
+            <p class="copyright">© 2026 Hoang Huy Sailing Harmony. All rights reserved. | Thiết kế bởi Thành Trung Designer</p>
+        </div>
+    </footer>
+
+    <!-- NÚT GỌI NỔI -->
+    <a href="tel:0944480991" class="sticky-call" title="Gọi ngay"></a>
+
+    <!-- MODAL ĐĂNG NHẬP -->
+    <div class="modal-overlay" id="authModal">
+        <div class="modal-box">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="loginForm">
+                <h3 class="modal-title">Đăng Nhập Quản Trị</h3>
+                <form onsubmit="event.preventDefault(); handleLogin();">
+                    <div class="form-group">
+                        <label>Email hoặc Số điện thoại</label>
+                        <input type="text" placeholder="nhap@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu</label>
+                        <input type="password" placeholder="••••••••" required>
+                    </div>
+                    <button type="submit" class="btn btn-accent" style="width: 100%;">ĐĂNG NHẬP</button>
+                </form>
+                <div class="modal-footer">
+                    Chưa có tài khoản? <a onclick="switchForm('register')">Đăng ký ngay</a>
+                </div>
+            </div>
+            <div id="registerForm" style="display: none;">
+                <h3 class="modal-title">Đăng Ký Tài Khoản</h3>
+                <form onsubmit="event.preventDefault(); handleRegister();">
+                    <div class="form-group"><label>Họ và tên</label><input type="text" required></div>
+                    <div class="form-group"><label>Email</label><input type="email" required></div>
+                    <div class="form-group"><label>Mật khẩu</label><input type="password" required></div>
+                    <button type="submit" class="btn btn-accent" style="width: 100%;">ĐĂNG KÝ</button>
+                </form>
+                <div class="modal-footer">
+                    Đã có tài khoản? <a onclick="switchForm('login')">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // SMART HEADER
+        const header = document.getElementById('mainHeader');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('scrolled');
+            else header.classList.remove('scrolled');
+        });
+
+           // HERO SLIDER (CẬP NHẬT)
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const totalSlides = slides.length;
+    let slideInterval;
+
+    function showSlide(index) {
+        slides.forEach(s => s.classList.remove('active'));
+        dots.forEach(d => d.classList.remove('active'));
+        
+        currentSlide = (index + totalSlides) % totalSlides;
+        if (currentSlide < 0) currentSlide = totalSlides - 1;
+        
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+        resetInterval();
+    }
+
+    function goToSlide(index) {
+        showSlide(index);
+        resetInterval();
+    }
+
+    function startInterval() {
+        slideInterval = setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+    }
+
+    function resetInterval() {
+        clearInterval(slideInterval);
+        startInterval();
+    }
+
+    // Khởi chạy
+    if (slides.length > 0) {
+        startInterval();
+    }
+
+        // MODAL
+        const modal = document.getElementById('authModal');
+        const loginForm = document.getElementById('loginForm');
+        const registerForm = document.getElementById('registerForm');
+
+        function openModal(type) {
+            modal.classList.add('active');
+            switchForm(type);
+        }
+        function closeModal() { modal.classList.remove('active'); }
+        function switchForm(type) {
+            if (type === 'login') { loginForm.style.display = 'block'; registerForm.style.display = 'none'; }
+            else { loginForm.style.display = 'none'; registerForm.style.display = 'block'; }
+        }
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+        function handleLogin() { alert('Đây là giao diện demo. Tính năng đăng nhập thật cần WordPress/Backend.'); closeModal(); }
+        function handleRegister() { alert('Đây là giao diện demo. Tính năng đăng ký thật cần WordPress/Backend.'); closeModal(); }
+    </script>
+
+</body>
+</html>
